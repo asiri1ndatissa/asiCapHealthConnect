@@ -1,16 +1,10 @@
 {
-  "name": "@asi/capacitor-health-connect",
-  "version": "1.0.0",
+  "name": "@asi/cap-health-connect",
+  "version": "0.0.1",
   "description": "Capacitor 7 plugin for Android Health Connect",
   "main": "dist/esm/index.js",
   "module": "dist/esm/index.js",
   "types": "dist/esm/index.d.ts",
-  "unpkg": "dist/plugin.js",
-  "files": [
-    "android/",
-    "dist/",
-    "src/"
-  ],
   "author": "Asiri Indatissa",
   "license": "MIT",
   "repository": {
@@ -20,35 +14,40 @@
   "bugs": {
     "url": "https://github.com/asiri1ndatissa/asiCapHealthConnect/issues"
   },
+  "homepage": "https://github.com/asiri1ndatissa/asiCapHealthConnect#readme",
   "keywords": [
     "capacitor",
     "capacitor-plugin",
-    "plugin",
-    "native",
     "android",
     "health-connect",
     "health",
     "fitness",
-    "google-health"
+    "ionic"
   ],
   "scripts": {
     "build": "tsc",
-    "clean": "rimraf ./dist",
-    "watch": "tsc --watch",
-    "prepare": "npm run build"
+    "clean": "rm -rf dist",
+    "prepublishOnly": "yarn clean && yarn build"
+  },
+  "files": [
+    "dist/",
+    "android/",
+    "src/",
+    "README.md",
+    "LICENSE"
+  ],
+  "peerDependencies": {
+    "@capacitor/core": "^7.0.0"
   },
   "devDependencies": {
     "@capacitor/android": "^7.0.0",
     "@capacitor/core": "^7.0.0",
-    "typescript": "^4.1.3",
-    "rimraf": "^3.0.2"
-  },
-  "peerDependencies": {
-    "@capacitor/core": "^7.0.0"
+    "typescript": "^5.0.0"
   },
   "capacitor": {
     "android": {
       "src": "android"
     }
-  }
+  },
+  "packageManager": "yarn@4.3.1"
 }
