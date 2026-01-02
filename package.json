@@ -1,5 +1,5 @@
 {
-  "name": "@asi/cap-health-connect",
+  "name": "@asiriindatissa/cap-health-connect",
   "version": "0.0.1",
   "description": "Capacitor 7 plugin for Android Health Connect",
   "main": "dist/esm/index.js",

@@ -1,11 +1,11 @@
-# @asi/cap-health-connect
+# @asiriindatissa/cap-health-connect
 
 Capacitor 7 plugin for Android Health Connect.
 
 ## Installation
 
 ```bash
-npm install @asi/cap-health-connect
+npm install @asiriindatissa/cap-health-connect
 npx cap sync
 ```
 
@@ -24,7 +24,7 @@ Check if Health Connect is available on the device.
 **Returns:** `Promise<{ available: boolean }>`
 
 ```typescript
-import { HealthConnect } from "@asi/cap-health-connect";
+import { HealthConnect } from "@asiriindatissa/cap-health-connect";
 
 const result = await HealthConnect.isAvailable();
 console.log("Health Connect available:", result.available);
@@ -61,7 +61,7 @@ Users need to have the Google Health Connect app installed. You can direct them 
 ## Example Usage
 
 ```typescript
-import { HealthConnect } from "@asi/cap-health-connect";
+import { HealthConnect } from "@asiriindatissa/cap-health-connect";
 
 async function checkHealthConnect() {
   try {
