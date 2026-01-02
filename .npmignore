@@ -1,0 +1,18 @@
+# Source files (only dist should be published)
+src/
+tsconfig.json
+
+# Build artifacts
+*.tsbuildinfo
+node_modules/
+.DS_Store
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Git
+.git/
+.gitignore

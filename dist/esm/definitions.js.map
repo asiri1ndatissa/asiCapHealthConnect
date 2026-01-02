@@ -1,0 +1,1 @@
+{"version":3,"file":"definitions.js","sourceRoot":"","sources":["../../src/definitions.ts"],"names":[],"mappings":"","sourcesContent":["export interface HealthConnectPlugin {\n  /**\n   * Check if Health Connect is available (Android only)\n   * Returns false on iOS and Web\n   */\n  isAvailable(): Promise<{ available: boolean }>;\n}\n"]}
