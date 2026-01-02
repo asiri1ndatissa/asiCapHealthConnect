@@ -1,11 +1,11 @@
-# @fitgmr/capacitor-health-connect
+# @asi/CapHealthConnect
 
 Capacitor 7 plugin for Android Health Connect.
 
 ## Installation
 
 ```bash
-npm install @fitgmr/capacitor-health-connect
+npm install @asi/CapHealthConnect
 npx cap sync
 ```
 
@@ -24,13 +24,14 @@ Check if Health Connect is available on the device.
 **Returns:** `Promise<{ available: boolean }>`
 
 ```typescript
-import { HealthConnect } from '@fitgmr/capacitor-health-connect';
+import { HealthConnect } from "@asi/CapHealthConnect";
 
 const result = await HealthConnect.isAvailable();
-console.log('Health Connect available:', result.available);
+console.log("Health Connect available:", result.available);
 ```
 
 **Platform Support:**
+
 - ✅ Android: Returns `true` if Health Connect SDK is available
 - ❌ iOS: Returns `false` (Health Connect is Android-only)
 - ❌ Web: Returns `false`
@@ -60,21 +61,21 @@ Users need to have the Google Health Connect app installed. You can direct them 
 ## Example Usage
 
 ```typescript
-import { HealthConnect } from '@fitgmr/capacitor-health-connect';
+import { HealthConnect } from "@asi/CapHealthConnect";
 
 async function checkHealthConnect() {
   try {
     const { available } = await HealthConnect.isAvailable();
 
     if (available) {
-      console.log('Health Connect is available!');
+      console.log("Health Connect is available!");
       // Proceed with requesting permissions and accessing health data
     } else {
-      console.log('Health Connect not available');
+      console.log("Health Connect not available");
       // Guide user to install Health Connect app
     }
   } catch (error) {
-    console.error('Error checking Health Connect:', error);
+    console.error("Error checking Health Connect:", error);
   }
 }
 ```
@@ -85,4 +86,4 @@ MIT
 
 ## Author
 
-FitGMR
+Asiri Indatissa

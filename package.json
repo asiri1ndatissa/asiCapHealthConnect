@@ -11,14 +11,14 @@
     "dist/",
     "src/"
   ],
-  "author": "FitGMR",
+  "author": "Asiri Indatissa",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/fitgmr/capacitor-health-connect.git"
+    "url": "git+https://github.com/asiri1ndatissa/asiCapHealthConnect.git"
   },
   "bugs": {
-    "url": "https://github.com/fitgmr/capacitor-health-connect/issues"
+    "url": "https://github.com/asiri1ndatissa/asiCapHealthConnect/issues"
   },
   "keywords": [
     "capacitor",

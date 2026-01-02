@@ -1,4 +1,4 @@
-package com.fitgmr.healthconnect
+package com.asi.healthconnect
 
 import android.content.Intent
 import android.content.pm.PackageManager
